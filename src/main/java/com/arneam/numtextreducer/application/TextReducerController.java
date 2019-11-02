@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("text-reducer")
+@RequestMapping("reduce")
 public class TextReducerController {
 
   @GetMapping("/{name}")

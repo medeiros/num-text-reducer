@@ -32,7 +32,7 @@ class TextReducerControllerIT {
   @ParameterizedTest
   @CsvSource({"Daniel, 9", "Maria, 6"})
   void shouldReduceNameToNumber(String name, String number) throws Exception {
-    mockMvc.perform(get("/text-reducer/" + name)).andExpect(status().isOk())
+    mockMvc.perform(get("/reduce/" + name)).andExpect(status().isOk())
         .andExpect(content().string(containsString(number)));
   }
 
