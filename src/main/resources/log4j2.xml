@@ -2,8 +2,8 @@
 <Configuration status="info" name="kafka-log" packages="com.arneam.numtextreducer.application">
     <Appenders>
         <Kafka name="Kafka" topic="test">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} - %m"/>
-            <Property name="bootstrap.servers">localhost:9092</Property>
+            <PatternLayout pattern="%date %message"/>
+            <Property name="bootstrap.servers">fangorn:9092</Property>
         </Kafka>
         <Async name="Async">
             <AppenderRef ref="Kafka"/>
