@@ -14,7 +14,7 @@ The following table is applied in calculations:
 
 # Example
 
-	GET /vowel-reducer/Daniel
+	GET /reducer/Daniel
 
 calculation: DANIEL => 415953 => 4+1+5+9+5+3 => 27 => 2+7 => 9
 
